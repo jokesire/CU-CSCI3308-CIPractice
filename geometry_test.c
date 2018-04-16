@@ -30,6 +30,22 @@ START_TEST(test_2d_area)
     c.y=5;
     ck_assert(coord_2d_area_triangle(&a, &b, &c) == 100.0);
 
+    a.x= 5;
+    a.y= 5;
+    b.x= 5;
+    b.y= 5;
+    c.x= 5;
+    c.y=5;
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.0);
+
+    a.x= 0;
+    a.y= 0;
+    b.x= 4;
+    b.y= 0;
+    c.x= 2;
+    c.y=3;
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 6.0);
+
 }
 END_TEST
 
