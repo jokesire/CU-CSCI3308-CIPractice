@@ -1,8 +1,8 @@
 /*
  * geometry.h
- * Andy Sayler
+ * Devan McCallum
  * CSCI 3308
- * Summer 2014
+ * Spring 2018
  *
  * This file contains a simple geomtery functions.
  *
@@ -15,6 +15,9 @@ typedef struct coord_2d {
     double x;
     double y;
 } coord_2d_t;
+
+/* Calculate the area of triangle*/
+double coord_2d_area_triangle(const coord_2d_t *a, const coord_2d_t *b, const coord_2d_t *c);
 
 /* Return the distance between two 2D coordinates */
 double coord_2d_dist(const coord_2d_t* a, const coord_2d_t* b);
